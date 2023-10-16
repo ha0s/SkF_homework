@@ -24,7 +24,7 @@ def print_field(field):
     for i in field:
         print ('            ', i)
 
-## Функция выода результата игры.
+## Функция вывода результата игры.
 def print_result(result):
     if result == 1:
         print('\033[33m--------------------------------------------------\033[0m')
@@ -96,12 +96,12 @@ def check_conditions(field):
             list_temp.append(field_[j][i])
         fields.append(list_temp)
         list_temp = []
-    # Генерация диаганалей
-    for i in range(n): # 1я диаганаль
+    # Генерация диагоналей
+    for i in range(n): # 1я диагональ
         list_temp.append(field_[i][i])
     fields.append(list_temp)
     list_temp = []
-    for i in range(n): # 2я диаганаль
+    for i in range(n): # 2я диагональ
         list_temp.append(field_[i][n - i -1])
     fields.append(list_temp)
     list_temp = []
